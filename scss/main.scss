@@ -1,0 +1,45 @@
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .main-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 50px;
+    h4 {
+      @include h4-font-desktop;
+    }
+    p {
+      color: $small-text-color;
+      line-height: 23px;
+      @include small-font-desktop;
+    }
+  }
+  .main-img {
+    width: 50%;
+  }
+  .main-img-1 {
+    background: url(../images/bg-showcase-1.jpg);
+    @include bg-position;
+  }
+  .main-img-2 {
+    background: url(../images/bg-showcase-2.jpg);
+    @include bg-position;
+  }
+  .main-img-3 {
+    background: url(../images/bg-showcase-3.jpg);
+    @include bg-position;
+  }
+}

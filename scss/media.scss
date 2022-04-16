@@ -1,0 +1,124 @@
+@media (max-width: 620px) {
+  .section-top,
+  .section-bottom {
+    h1 {
+      font-size: 1.8em;
+      padding: 0;
+    }
+    .sign-up {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 85%;
+        padding: 10px;
+        margin: 0;
+      }
+
+      a {
+        margin-top: 5px;
+        width: 85%;
+      }
+    }
+  }
+  .section-top {
+    height: 500px;
+    h1 {
+      width: 90%;
+    }
+  }
+  .section-bottom {
+    height: 400px;
+    h1 {
+      width: 70%;
+    }
+  }
+  .article-1 {
+    .article-big-box {
+      width: 100%;
+      margin: auto;
+      @include flex-column;
+      .article-box {
+        width: 100%;
+        h4 {
+          font-size: 1.5em;
+        }
+        p {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+  .article-2 {
+    h3 {
+      font-size: 1.8em;
+    }
+    .article-big-box {
+      width: 100%;
+      margin: auto;
+      @include flex-column;
+      .article-box {
+        width: 100%;
+        h4 {
+          font-size: 1em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .article-1,
+  .article-2 {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .main-container {
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column-reverse;
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+    .main-left {
+      width: 100%;
+      height: 400px;
+      .text {
+        padding: 0 20px;
+        height: 100%;
+
+        h4 {
+          font-size: 1.8em;
+          line-height: 40px;
+          text-align: left;
+          width: 70%;
+        }
+        p {
+          font-size: 1.1em;
+          line-height: 30px;
+        }
+      }
+    }
+    .main-img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    .footer-left {
+      width: 85%;
+      @include flex-column;
+      justify-content: center;
+      nav {
+        text-align: center;
+      }
+    }
+    .footer-right {
+      padding-top: 20px;
+    }
+  }
+}

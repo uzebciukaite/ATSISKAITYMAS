@@ -1,0 +1,39 @@
+.article-1 {
+  @include article-parameters;
+  i {
+    color: $bg-btn;
+    font-size: 40px;
+  }
+}
+.article-2 {
+  @include article-parameters;
+  h3 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+  }
+  .article-box {
+    h4 {
+      font-size: 0.9em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+}
+.img {
+  @include article-2-img-parameters;
+}
+.img-1 {
+  background: url(../images/testimonials-1.jpg);
+  @include bg-position;
+}
+.img-2 {
+  background: url(../images/testimonials-2.jpg);
+  @include bg-position;
+}
+.img-3 {
+  background: url(../images/testimonials-3.jpg);
+  @include bg-position;
+}

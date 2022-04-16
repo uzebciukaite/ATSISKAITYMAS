@@ -1,0 +1,102 @@
+@mixin btn-style {
+  background: $bg-btn;
+}
+@mixin bg-position {
+  background-size: cover;
+  background-position: center;
+}
+@mixin small-font-desktop {
+  padding-top: 10px;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+@mixin h4-font-desktop {
+  padding-top: 15px;
+  font-size: 1.2em;
+}
+@mixin flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin article-parameters {
+  width: 100%;
+  background: $article-bg;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .article-big-box {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+  }
+  .article-box {
+    width: 25%;
+    height: 200px;
+    @include flex-column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    h4 {
+      @include h4-font-desktop;
+    }
+    p {
+      color: $small-text-color;
+      @include small-font-desktop;
+      width: 100%;
+    }
+  }
+}
+@mixin article-2-img-parameters {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px grey;
+}
+
+@mixin section-parameters {
+  width: 100%;
+  background: url(../images/bg-masthead.jpg);
+  @include bg-position;
+  @include flex-column;
+  justify-content: center;
+  h1 {
+    width: 60%;
+    text-align: center;
+    text-shadow: 0 0 2px ligtgrey;
+    color: white;
+  }
+  .sign-up {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  input {
+    flex: 3;
+    margin-right: 5px;
+    font-family: $font-family;
+    font-size: $form-font-size;
+    border-radius: 5px;
+    border: white;
+    padding-left: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: $form-font-size;
+    @include flex-row;
+    flex: 1;
+    width: 80px;
+    padding: 10px;
+    background: $bg-btn;
+    color: white;
+    border-radius: 5px;
+  }
+}

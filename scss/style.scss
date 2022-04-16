@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,700&display=swap");
+
+@import "mixins";
+@import "variables";
+@import "header";
+@import "article";
+@import "section";
+@import "main";
+@import "footer";
+@import "media";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  font-family: $font-family;
+}
